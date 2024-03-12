@@ -24,7 +24,6 @@ message CreateUserRequest {
     string role = 5;
 };
 
-
 message CreateUserResponse {};
 
 message GetAllUsersRequest {
