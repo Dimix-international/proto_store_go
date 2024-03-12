@@ -11,4 +11,4 @@ install_gen_go:
 	go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
 
 generate:
-	protoc -I proto proto/user_management/* --go_out=./gen/go/ --go_opt=paths=source_relative --go-grpc_out=./gen/go/ --go-grpc_opt=paths=source_relative
+	protoc -I proto proto/user_management/user.proto --go_out=./gen/go/ --go_opt=paths=source_relative --go-grpc_out=./gen/go/ --go-grpc_opt=paths=source_relative
