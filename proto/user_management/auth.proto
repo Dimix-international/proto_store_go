@@ -16,5 +16,4 @@ message SignUpRequest {
     string role = 5;
 };
 
-
 message SignUpResponse {};
