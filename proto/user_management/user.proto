@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package user;
 
-import "google/protobuf/timestamp.proto";
-
 option go_package = "melnikov.user.v1;userv1";
 
 service User {
@@ -19,13 +17,12 @@ service User {
 message UserData {
     string id = 1;
     string email = 2;
-    string password = 3;
-    string first_name = 4;
-    string last_name = 5;
-    string role = 6;
-    int32 rating = 7;
-    google.protobuf.Timestamp created_at = 8;
-    google.protobuf.Timestamp updated_at = 9;
+    string first_name = 3;
+    string last_name = 4;
+    string role = 5;
+    int32 rating = 6;
+    string created_at = 7;
+    string updated_at = 8;
 };
 
 message CreateUserRequest {
@@ -61,8 +58,8 @@ message GetUserByIDOrEmailResponse {
     string last_name = 4;
     string role = 5;
     int32 rating = 6;
-    google.protobuf.Timestamp created_at = 7;
-    google.protobuf.Timestamp updated_at = 8;
+    string created_at = 7;
+    string updated_at = 8;
 };
 
 message DeleteOrRecoverUserRequest {
@@ -85,6 +82,6 @@ message UpdateUserResponse {
     string last_name = 4;
     string role = 5;
     int32 rating = 6;
-    google.protobuf.Timestamp created_at = 7;
-    google.protobuf.Timestamp updated_at = 8;
+    string created_at = 7;
+    string updated_at = 8;
 };
