@@ -75,6 +75,7 @@ message UpdateUserRequest {
     string first_name = 4;
     string last_name = 5;
     string role = 6;
+    string targetId = 7; 
 };
 
 message UpdateUserResponse {
